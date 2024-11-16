@@ -32,6 +32,7 @@ const ContactForm = () => {
 
       if (response.status === 201) {
         setSuccess('Contact added successfully!');
+        setTimeout(() => navigate('/table'), 1500);
         setFormData({ firstName: '', lastName: '', email: '', phone: '', company: '', jobTitle: '' });
       }
     } catch (err) {
