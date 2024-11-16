@@ -14,7 +14,7 @@ const ContactsTable = () => {
 
   const fetchContacts = async () => {
     try {
-      const response = await axios.get('http://localhost:3000/contacts');
+      const response = await axios.get('https://erino-uz80.onrender.com/contacts');
       setContacts(response.data);
       setSortedContacts(response.data); 
     } catch (error) {
@@ -24,7 +24,7 @@ const ContactsTable = () => {
 
   const handleDelete = async (id) => {
     try {
-      await axios.delete(`http://localhost:3000/contacts/${id}`);
+      await axios.delete(`https://erino-uz80.onrender.com/contacts/${id}`);
       fetchContacts();
     } catch (error) {
       console.error('Error deleting contact:', error);
