@@ -19,7 +19,7 @@ const UpdateContactForm = () => {
 
   const fetchContact = async () => {
     try {
-      const response = await axios.get(`http://localhost:3000/contacts/${id}`);
+      const response = await axios.get(`https://erino-uz80.onrender.com/contacts/${id}`);
       setFormData(response.data);
     } catch (error) {
       setError('Failed to load contact data');
@@ -41,7 +41,7 @@ const UpdateContactForm = () => {
     setSuccess('');
 
     try {
-      const response = await axios.put(`http://localhost:3000/contacts/${id}`, formData);
+      const response = await axios.put(`https://erino-uz80.onrender.com/contacts/${id}`, formData);
 
       if (response.status === 200) {
         setSuccess('Contact updated successfully!');
