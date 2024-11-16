@@ -28,7 +28,7 @@ const ContactForm = () => {
 
     try {
       
-      const response = await axios.post('http://localhost:3000/contacts', formData);
+      const response = await axios.post('https://erino-uz80.onrender.com/contacts', formData);
 
       if (response.status === 201) {
         setSuccess('Contact added successfully!');
