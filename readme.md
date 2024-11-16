@@ -46,9 +46,9 @@ npm install
 ```bash
 npm run dev
 ```
-##
 
-**Brief Project Description:**
+
+## **Brief Project Description:**
 
 This project is a Contact Management App that allows users to:
 
@@ -69,8 +69,7 @@ This project is a Contact Management App that allows users to:
 - **ContactsTable:** Displays contacts in a table with pagination and sorting by first name.
 - **UpdateContactForm:** Allows users to update the information of an existing contact.
 
-##
-**Challenges and Solutions:**
+## **Challenges and Solutions:**
 
 **Challenge 1: Using MUI for the first time:**
 
@@ -90,9 +89,7 @@ Implementing sorting by first name was trickier. I had to ensure that sorting co
 
 **Solution:** I wrote a custom sorting function that compares the values in the first name column and updates the state whenever the sorting order changes. I also used the ```sort``` method to reorder the contacts based on the selected column and direction.
 
-##
-
-**Prisma Database Schema:**
+## **Prisma Database Schema:**
 
 This is  Prisma schema for the Contact model, which connects to a PostgreSQL database:
 
@@ -116,9 +113,7 @@ model Contact {
   jobTitle        String
 }
 ```
-##
-
-**Summary of Project Structure:**
+## **Summary of Project Structure:**
 
 - **Frontend:**
    - React components for adding, updating, and displaying contacts.
