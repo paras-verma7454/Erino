@@ -2,6 +2,21 @@
 
 ## 🚀 **PROJECT SUBMISSION**
 
+## **App Routing Structure**
+
+The project uses **React Router** to manage navigation between different pages of the application. Below are the available routes and what they do:
+
+### **Routes**:
+
+- **`/`** - Displays the **Contact Form** for adding new contacts.
+- **`/table`** - Displays the **Contacts Table** where users can view, edit, delete, and sort contacts.
+- **`/update/:id`** - Displays the **Update Contact Form** for editing an existing contact's details.
+
+### **Live Site**:
+You can access the live version of the app at:  [https://erino-five.vercel.app/](https://erino-five.vercel.app/)
+
+> **Note**: The backend may be slow for the first request due to the use of a free hosting instance. Subsequent requests should be faster.
+
 
 ### **Setup Instructions**:
 
